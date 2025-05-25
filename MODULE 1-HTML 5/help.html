@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help - Community Event Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      main.help-section {
+        max-width: 800px;
+        margin: 3rem auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .help-section h2 {
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+
+      .faq-item {
+        margin-bottom: 1.5rem;
+      }
+
+      .faq-item h3 {
+        color: var(--secondary-color);
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      .faq-item p {
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .back-link:hover {
+        color: var(--primary-dark);
+      }
+
+      @media (max-width: 600px) {
+        main.help-section {
+          margin: 1.5rem;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="help-section">
+      <h2>Help & Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How do I register for an event?</h3>
+        <p>
+          Go to the "Events" section on the home page, fill in the registration
+          form, and click submit. A confirmation message will appear once it is
+          successful.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I update my preferences?</h3>
+        <p>
+          Yes! Your selected event type is saved for your next visit. You can
+          clear or change it using the “Clear Preferences” button in the form
+          section.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I find nearby events?</h3>
+        <p>
+          Use the “Find Nearby Events” button. The site will request your
+          location and display coordinates or suggest locations near you.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why do I see a warning when leaving the page?</h3>
+        <p>
+          That’s a safety feature to prevent accidental loss of form data. It
+          shows if you try to leave a form page before submitting.
+        </p>
+      </div>
+
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </main>
+
+    <footer>
+      &copy; 2025 Local Community Event Portal. All rights reserved.
+    </footer>
+  </body>
+</html>

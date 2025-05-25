@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section>
+        <center>
+            <h2 class="highlight">Register for an Event</h2>
+        </center>
+        
+        <form id="eventForm" onsubmit="handleFormSubmit(event)">
+          <label
+            >Name:
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              autofocus /></label
+          ><br />
+          <label
+            >Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required /></label
+          ><br />
+          <label>Date: <input type="date" name="date" required /></label><br />
+          <label
+            >Phone:
+            <input
+              type="tel"
+              id="phone"
+              onblur="validatePhone()"
+              placeholder="1234567890"
+              required /></label
+          ><br />
+
+          <label
+            >Event Type:
+            <select id="eventType" onchange="saveEventType()">
+              <option value="">--Select--</option>
+              <option value="singing">Singing</option>
+              <option value="cycling">Cycling</option>
+              <option value="drawing">Drawing</option>
+              <option value="rangoli">Rangoli</option>
+              <option value="running">Running</option>
+              <option value="dance">Dance</option>
+            </select>
+          </label>
+          <div id="feeDisplay"></div>
+
+          <label
+            >Message:<br />
+            <textarea id="feedback" onkeyup="countChars(this)"></textarea>
+          </label>
+          <div>Character Count: <span id="charCount">0</span></div>
+
+          <button type="submit">Submit</button>
+          <a href="/MODULE 1/index.html"><button type="button" onclick="clearPreferences()"> Clear Preferences
+          </button></a>
+          
+           
+          <output id="formOutput"></output>
+        </form>
+
+  </body>
+</html>

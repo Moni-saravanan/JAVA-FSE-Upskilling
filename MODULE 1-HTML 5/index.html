@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Community Event Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Welcome Banner -->
+    <div id="welcomeBanner">
+      <h1>Welcome to the Community Portal</h1>
+      <p>
+        Enjoy our
+        <span style="color: red; font-weight: bold">special offers</span> for
+        early registrations!
+      </p>
+    </div>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="help.html" target="_blank">Help</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <h2 class="highlight">Home</h2>
+        <p>
+          Welcome to the <strong>Local Community Event Portal</strong> — your
+          one-stop destination for discovering, registering, and participating
+          in exciting events happening around you!
+        </p>
+        <p>
+          Whether you're a creative artist, a fitness enthusiast, or someone who
+          just loves community fun, we have something for everyone. Join us and
+          be a part of unforgettable experiences ranging from
+          <span style="color: #6a1b9a; font-weight: bold"
+            >cycling marathons</span
+          >
+          to
+          <span style="color: #6a1b9a; font-weight: bold">cultural dances</span>
+          and more.
+        </p>
+        <p>
+          ✨
+          <em
+            >Register early to grab exclusive perks and surprises for first-time
+            participants!</em
+          >
+        </p>
+      </section>
+
+      <!-- Events -->
+      <section id="events">
+        <h2 class="highlight">Events</h2>
+        <p>
+          Get ready to be part of the most exciting local gatherings of the
+          year! 🎉 Our events are designed for fun, creativity, and community
+          spirit. Whether you're a performer, artist, athlete, or an
+          enthusiastic audience member — there's something for everyone!
+        </p>
+        <p>
+          <span style="color: red; font-weight: bold">🎁 Special Offers:</span>
+          The first 100 registrants will receive exclusive goodies and
+          certificates!
+        </p>
+        <a href="EventRegistration.html"><button>Register Now</button></a>
+
+        <table>
+          <tr>
+            <td>
+              <img
+                src="/MODULE 1/images/cycling.jpg"
+                alt="Cycling event"
+                title="Cycling"
+              />
+              <h3>Cycling Challenge 🚴</h3>
+              <p><b>Time:</b> 12.00 PM</p>
+              <p>
+                Show your stamina in this thrilling endurance ride around the
+                park trails!
+              </p>
+            </td>
+
+            <td>
+              <img
+                src="/MODULE 1/images/drawing.jpg"
+                alt="Drawing event"
+                title="Drawing"
+              />
+              <h3>Art Attack 🎨</h3>
+              <p><b>Time:</b> 01.00 PM</p>
+              <p>
+                Unleash your creativity in our themed drawing contest with
+                prizes for all ages.
+              </p>
+            </td>
+
+            <td>
+              <img
+                src="/MODULE 1/images/singing.jpg"
+                alt="Singing event"
+                title="Singing"
+              />
+              <h3>Melody Night 🎤</h3>
+              <p><b>Time:</b> 09.30 PM</p>
+              <p>
+                Let your voice be heard! A solo/duet singing competition with
+                live audience voting.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="/MODULE 1/images/rangoli.jpg"
+                alt="Rangoli event"
+                title="Rangoli"
+              />
+              <h3>Color Burst Rangoli 🌸</h3>
+              <p><b>Time:</b> 11.00 PM</p>
+              <p>
+                Bring tradition to life with your colorful designs — materials
+                provided on site.
+              </p>
+            </td>
+
+            <td>
+              <img
+                src="/MODULE 1/images/runningForKids.jpg"
+                alt="Running race for Kids"
+                title="Running race"
+              />
+              <h3>Little Champs Race 🏃‍♂️</h3>
+              <p><b>Time:</b> 09.00 PM</p>
+              <p>
+                A fun and safe 100m dash for children — medals for all
+                participants!
+              </p>
+            </td>
+
+            <td>
+              <img
+                src="/MODULE 1/images/traditionalDance.jpg"
+                alt="Dance event"
+                title="Folk Dance"
+              />
+              <h3>Folk Fusion Dance 💃</h3>
+              <p><b>Time:</b> 05.00 AM</p>
+              <p>
+                Celebrate our culture with group and solo folk performances in
+                vibrant attire.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h3>Find Events Near You</h3>
+        <button onclick="findNearby()">Find Nearby Events</button>
+        <div id="location"></div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="highlight">Contact</h2>
+        <p>
+          We’d love to hear from you! Whether you have questions about events,
+          sponsorships, or volunteer opportunities, our team is ready to help.
+          📩
+        </p>
+
+        <h3>📞 Get in Touch</h3>
+        <p><b>Email:</b> community@mgrlocal.org</p>
+        <p><b>Phone:</b> +91 98765 43210</p>
+        <p>
+          <b>Address:</b> MGR Community Center, 45 Gandhi Street, Chennai -
+          600001
+        </p>
+
+        <h3>💬 Follow Us</h3>
+        <p>
+          Stay updated on upcoming events and news:
+          <br />
+          <a href="#" target="_blank">🌐 Facebook</a> |
+          <a href="#" target="_blank">📸 Instagram</a> |
+          <a href="#" target="_blank">🐦 Twitter</a>
+        </p>
+
+        <h3>📝 Feedback or Suggestions?</h3>
+        <p>
+          Share your thoughts or questions with us at
+          <a href="mailto:feedback@mgrlocal.org">feedback@mgrlocal.org</a>
+        </p>
+      </section>
+
+      <!-- Video Section -->
+      <section id="video">
+        <h2 class="highlight">Watch Our Promo Video</h2>
+        <video width="400" controls oncanplay="videoReady()">
+          <source src="media/promo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p id="videoStatus"></p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Community Portal</p>
+    </footer>
+  </body>
+</html>
