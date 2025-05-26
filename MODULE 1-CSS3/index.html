@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Community Event Portal</title>
+    <!-- Link for External css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link for Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Internal CSS -->
+    <style>
+      body {
+        background: url("/images/background-image.jpg") no-repeat center center
+          fixed;
+        background-size: cover;
+        height: 100vh;
+        padding: 10px;
+      }
+      /*Navigation Link and List Styling*/
+
+      .navigation ul {
+        display: flex;
+        /* Aligns items to the right */
+        justify-content: flex-end;
+        font-size: 20px;
+      }
+      .navigation ul li {
+        list-style: none;
+        margin-right: 10px;
+      }
+      /* Stack items in Vertical instead of Horizontal */
+      @media screen and (max-width: 768px) {
+        .navigation ul {
+          flex-direction: column;
+        }
+      }
+
+      .navigation ul li a {
+        text-decoration: none;
+      }
+      .navigation ul li a:link {
+        color: lab(20.98% -16.08 -4.75);
+      }
+      .navigation ul li a:hover {
+        color: blue;
+      }
+      .navigation ul li a:active {
+        color: black;
+      }
+      .navigation ul li a:visited {
+        color: #d42016;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#table">Event Details</a></li>
+          <li><a href="#newsArticle">News</a></li>
+        </ul>
+      </div>
+      <!-- Welcome Banner -->
+      <!-- Inline CSS -->
+      <div class="welcomeBanner" id="Home" style="color: #d42016">
+        <h1>WELCOME TO THE CITY PORATL</h1>
+      </div>
+    </div>
+    <!-- navigation with list and link -->
+
+    <div>
+      <h2 style="background-color: rgb(255, 126, 79); color: white">
+        Latest Events
+      </h2>
+
+      <!-- Event card -->
+      <div class="eventCard">
+        <div>
+          <h3>Upcoming Event</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa
+            assumenda quas at, laborum eligendi fugit incidunt quibusdam
+            explicabo pariatur vel dolorum soluta optio architecto libero
+            praesentium repellendus ipsam saepe exercitationem, delectus cum
+            nihil enim sunt? Commodi nulla maxime labore hic perspiciatis
+            laborum omnis odit assumenda, consequatur doloribus consectetur,
+            earum voluptatem, aliquam officiis vitae tempora laudantium deserunt
+            optio culpa fugit corrupti! Impedit.
+          </p>
+        </div>
+        <div>
+          <h3>Upcoming Event</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            impedit sit architecto, fugit harum autem tenetur molestias quasi
+            provident, at magnam aperiam ipsum! Possimus sit, molestias at quas
+            repellendus eveniet optio repudiandae doloribus illo eius! Officia,
+            neque nemo. Blanditiis, assumenda eos! Similique, deleniti quos hic
+            voluptates, voluptas debitis officia modi accusantium eos molestias
+            atque pariatur voluptatibus numquam obcaecati eligendi aliquam
+            soluta unde ex magnam.
+          </p>
+        </div>
+        <div>
+          <h3>Upcoming Event</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            officiis obcaecati voluptatem. At, consectetur magnam suscipit,
+            ratione mollitia illo soluta earum beatae saepe molestias ab
+            laboriosam, optio nostrum totam dolores nemo eveniet ipsum similique
+            et nisi. Placeat, voluptatem maiores? Ex iste culpa laborum impedit?
+            Nostrum obcaecati corrupti soluta, delectus aliquam voluptate
+            tempore explicabo incidunt cupiditate? Officiis in tenetur, veniam
+            nisi libero ipsam saepe, doloribus, ullam facere dignissimos natus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- News Article for column-count -->
+    <div id="newsArticle">
+      <div>
+        <h2>News Article</h2>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
+          ipsa quis. Quidem eos possimus porro cumque distinctio! Impedit, quas.
+          Delectus quidem a fuga dolore perferendis minus laudantium consequatur
+          deserunt ad odio repellendus, velit possimus officia error alias porro
+          numquam dolores cupiditate maiores fugit! Esse voluptatibus facere
+          mollitia inventore modi expedita placeat temporibus blanditiis dolorem
+          ipsum minima provident excepturi laborum, voluptas maxime! Laborum
+          neque modi eius dolorum quis quod qui, aliquam libero repellat vitae
+          totam vel iure labore hic sapiente odio dolores dignissimos molestias
+          officiis dolor temporibus. Officia explicabo error unde, fuga ducimus
+          delectus illum obcaecati beatae magni vitae a debitis? Quam earum sint
+          fugit incidunt sequi, atque, nihil non sed officiis dolore dolor
+          expedita iure quisquam nemo id accusantium excepturi soluta molestiae
+          dolorum consequuntur. Velit dolorum veniam quibusdam perspiciatis
+          aperiam est repudiandae praesentium? Doloribus iusto quo molestias
+          libero sint architecto est deserunt neque ullam illum fugiat autem,
+          sunt quibusdam sapiente. Quos expedita ducimus temporibus mollitia
+          quibusdam fugit, veritatis nihil eveniet ab necessitatibus ipsum
+          beatae dolorem culpa iusto et, quam sed soluta dolore? Nisi unde,
+          consequuntur quia ipsam asperiores, esse voluptatem officiis maiores
+          impedit amet illum distinctio error est odit. Soluta modi laborum sed
+          optio saepe recusandae consequuntur, veritatis fuga suscipit!
+        </p>
+      </div>
+    </div>
+    <div class="List">
+      <h2>Events Available</h2>
+      <ul>
+        <li>Cycling</li>
+        <li>Dance</li>
+        <li>Running race</li>
+        <li>Rangoli</li>
+      </ul>
+    </div>
+    <div class="table" id="table">
+      <h2 style="margin-bottom: 20px">Event Details in Table Format</h2>
+      <table>
+        <tr>
+          <th>Name of Event</th>
+          <th>Event Timing</th>
+        </tr>
+        <tr>
+          <td>Cycling</td>
+          <td>10.00PM</td>
+        </tr>
+        <tr>
+          <td>Dance</td>
+          <td>06.00AM</td>
+        </tr>
+        <tr>
+          <td>Running Race</td>
+          <td>09.30AM</td>
+        </tr>
+        <tr>
+          <td>Rangoli</td>
+          <td>03.00PM</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
