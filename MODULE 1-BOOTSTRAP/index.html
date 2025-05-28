@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap 5 Complete Demo</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+
+    <!-- 1. Typography -->
+    <section>
+      <h1 class="display-1 text-center text-primary">Bootstrap 5 Demo</h1>
+      <p class="lead text-muted">Showcasing all Bootstrap 5 components and utilities.</p>
+      <p class="fw-bold text-uppercase">This is uppercase bold text</p>
+      <p class="text-lowercase">THIS IS lowercase text</p>
+      <p class="text-capitalize">this is capitalized sentence</p>
+    </section>
+
+    <!-- 2. Responsive Grid Layout -->
+    <section class="my-5">
+      <h2>Responsive Grid</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 bg-primary text-white p-3">Column 1</div>
+        <div class="col-12 col-md-6 col-lg-4 bg-success text-white p-3">Column 2</div>
+        <div class="col-12 col-md-6 col-lg-4 bg-warning text-white p-3">Column 3</div>
+      </div>
+    </section>
+
+    <!-- 3. Two-Column Layout -->
+    <section class="my-5">
+      <h2>Sidebar Layout</h2>
+      <div class="row">
+        <div class="col-md-3 bg-secondary text-white p-3">Sidebar</div>
+        <div class="col-md-9 p-3">Main Content Area</div>
+      </div>
+    </section>
+
+    <!-- 4. Flexbox Utilities -->
+    <section class="my-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="p-2 bg-light">Flex Item 1</div>
+      <div class="p-2 bg-dark text-white">Flex Item 2</div>
+      <div class="p-2 bg-light">Flex Item 3</div>
+    </section>
+
+    <!-- 5. Buttons -->
+    <section class="my-5">
+      <h2>Buttons</h2>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Outline</button>
+
+      <div class="btn-group mt-3" role="group">
+        <input type="checkbox" class="btn-check" id="btn-check1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btn-check1">Check 1</label>
+
+        <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btn-check2">Check 2</label>
+      </div>
+    </section>
+
+    <!-- 6. Forms -->
+    <section class="my-5">
+      <h2>Forms</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" />
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="agree" />
+          <label class="form-check-label" for="agree">Agree to terms</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
+          <label for="floatingEmail">Email address</label>
+        </div>
+      </form>
+    </section>
+
+    <!-- 7. Nav and Tabs -->
+    <section class="my-5">
+      <h2>Navigation</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Tab 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tab 2</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 8. Cards and Media -->
+    <section class="my-5">
+      <h2>Cards</h2>
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Profile Card</h5>
+          <p class="card-text">This is a Bootstrap card example.</p>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-start mt-4">
+        <img src="https://via.placeholder.com/64" class="me-3 rounded" alt="media" />
+        <div>
+          <h5>Media Title</h5>
+          <p>Some example text next to an image.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Modal (JS Plugin) -->
+    <section class="my-5">
+      <h2>Modal Popup</h2>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">This is a Bootstrap modal!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Accordion (JS Plugin) -->
+    <section class="my-5">
+      <h2>Accordion</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">This is the first item's body.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Icons -->
+    <section class="my-5">
+      <h2>Icons</h2>
+      <p><i class="bi bi-facebook"></i> Facebook</p>
+      <p><i class="bi bi-twitter"></i> Twitter</p>
+      <button class="btn btn-outline-dark"><i class="bi bi-house-door"></i></button>
+    </section>
+
+    <!-- 12. Utilities -->
+    <section class="my-5 p-4 bg-gradient bg-dark text-white rounded-3 shadow-lg">
+      <h2>Utilities</h2>
+      <p class="m-3 p-2 border border-primary rounded-circle d-none d-md-block">This text is only visible on md+</p>
+    </section>
+
+  </div>
+
+  <!-- Fixed Footer -->
+  <footer class="bg-secondary text-white text-center position-fixed bottom-0 w-100 py-2">
+    <small>&copy; 2025 Bootstrap Demo Project</small>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
